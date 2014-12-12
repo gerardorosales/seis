@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Continuous Scroll - fullPage.js</title>
+	<meta name="author" content="Matthew Howell" />
+	<meta name="description" content="fullPage continuous scrolling demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+	<meta name="Resource-type" content="Document" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />-->
+<!--	<link rel="stylesheet" type="text/css" href="css/examples.css" />-->
+	<link rel="stylesheet" href="css/960.css">
+	<link rel="stylesheet" href="css/text.css">
+	<link rel="stylesheet" href="css/stylem.css">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+			  sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+			  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+			  menu: '#menu',
+			  continuousVertical: true
+			});
+		});
+
+
+		
+		$(document).ready(function() {
+			$(window).ready(function() {
+	    	var wi = $(window).width();
+
+
+	 
+		    $(window).resize(function() {
+	    	    var wi = $(window).width();
+	 	
+	    	    if (wi <= 480){
+	        	    $('.t').text('Menor a 480px. Ancho actual: ' + wi + 'px.');
+	        	    window.location.replace("movil.html");
+	            	}
+	        	else {
+	            	$('.t').text('Mayor a 480px. Ancho actual: ' + wi + 'px.');
+	            	window.location.replace("index.html");      
+	            	}
+	    		});            
+			})
+
+		});
+		
+	</script>
+
+</head>
+<body>
+
+<div id='fullpage'>
+	
+
+			<div class='section pantalla1'>
+				<div class='intro' >
+					<div class="empresa">
+						<h1>Travel Assistance</h1>
+					</div>					
+				</div>
+			</div>
+
+			<div class='section pantalla2'>
+				<div class='intro'>
+					
+								<img class="destino" src="img/02.jpg" alt="">
+								<br>
+								<p class="centrado">Paris</p>
+							
+								<img class="destino" src="img/04.jpg" alt="">
+								<br>
+								<p class="centrado">Islandia</p>
+
+								<img class="destino" src="img/07.jpg" alt="">
+								<br>
+								<p class="centrado">Dubai</p>
+							
+
+				</div>
+			</div>
+
+			<div class='section pantalla3'>
+				<div class='intro'>
+						<div class="row contacto">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1780.2681202460233!2d-65.19717482226949!3d-26.822891508111557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x95dcb29789d2e208!2sAgo+Viajes+-+Turismo+Internacional!5e0!3m2!1ses!2sar!4v1418392745136" width="350" height="150" frameborder="0" style="border:0"></iframe>
+						
+								<h3>Dejanos tu mensaje</h3>
+								<form action="">
+									<br>
+									<input type="text" placeholder="Nombre" name="Nombre">
+									<br><br>
+									<input type="text" placeholder="e-mail" name="email">
+									<br><br>
+									<textarea name="mensaje" placeholder="Mensaje"></textarea>
+
+    							<br><br><input class="boton" type="submit" value="Enviar">
+								</form> 	
+					
+
+						</div>
+					</div>
+				
+			</div>
+
+			<div class='section pantalla4'>
+			<div class='intro'>
+						<div class="row noticia">		
+								<img src="img/09.jpg" alt="">
+						</div>
+						<div class="noticia">
+								<h2>Noticia 1</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid quos alias voluptatum ab eos, tenetur temporibus dolor debitis vitae fugit provident obcaecati porro rerum tempore, possimus deserunt odit dolores</p>
+								<h2>Noticia 2</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid quos alias voluptatum ab eos, tenetur temporibus dolor debitis vitae fugit provident obcaecati porro rerum tempore, possimus deserunt odit dolores?</p>
+						</div>
+
+						</div>
+				</div>
+			</div>
+
+
+</body>
+</html>

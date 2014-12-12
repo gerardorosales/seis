@@ -1,0 +1,117 @@
+body{
+	font-size: 0.5em
+}
+
+
+.empresa{
+	border-radius: 20px;
+	background-color: rgba(150,150,150,0.5);
+	opacity: 0.5;
+	width: 30%;
+}
+
+h1{
+	font-size: 5em;
+}
+
+h2{
+	font-size: 4em;
+}
+
+h3{
+	font-size: 3em;
+}
+
+label{
+	width: 300px;
+	float: left;
+}
+
+.mensaje{
+	height: 50px;
+}
+
+.pantalla1{
+	background: url(../img/01.jpg);
+	background-size: 100%;
+}
+
+.pantalla2{
+  	background: linear-gradient(to right,  #42CAFD, #85C7F2);
+}
+
+.pantalla3{
+  	background: linear-gradient(to right,  #85C7F2, #636363);
+}
+
+.pantalla4{
+  	background: linear-gradient(to right,  #636363, #636363);
+}
+
+.destino{
+	width: 280px;
+	height: 160px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 20px 4px rgba(40,40,40,0.5);
+}
+
+.centrado{
+	text-align: center;
+	font-size: 1em;
+	color: #CCC;
+}
+
+.contacto{
+	background-color: #CCC;
+	border-radius: 20px;
+}
+
+input{
+	width: 250px; 
+	height: 20px;
+	padding: 5px 5px 0px 5px; 
+	border-radius: 5px;
+	resize:none;
+}
+
+.boton{
+	height: 40px;
+}
+
+.mapa{
+	margin: 20px auto;
+}
+
+label{
+	float: left;
+}
+
+textarea {
+	width: 250px; 
+	height: 100px;
+	padding: 5px 5px 0px 5px; 
+	border-radius: 5px;
+	resize:none;
+}
+
+.container_12{
+	border-radius: 25px;
+	height: 400px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.noticia{
+	text-align: left;
+}
+
+.noticia p{
+	text-align: left;
+}
+
+.noticia img{
+	width: 300px;
+	border-radius: 50%;
+	border: 2px dotted #000;
+	margin: 0 auto;
+}
